@@ -1,0 +1,46 @@
+.loading_container{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+    z-index: 99;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.loader{
+	display: block;
+}
+.loader span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	border-radius: 50%;
+	animation: updown 0.5s  alternate infinite;
+	animation-delay: calc(0.2s * var(--i));
+}
+.one{
+	background: var(--primary-color);
+}
+.two
+{
+	background: rgb(0, 255, 106);
+}
+.three{
+	background: blueviolet;
+}
+span:not(:first-child)
+{
+	margin-left: 10px;
+}
+@keyframes updown {
+	from{
+		transform: translateY(-20px);
+	}
+	to{
+		transform: translateY(20px);
+	}
+}

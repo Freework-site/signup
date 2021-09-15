@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Montserrat, sans-serif;
+}
+:root{
+    --primary-color: #e1e1d0;
+    --button-color:#6055a5;
+}
+html{
+    background:var(--primary-color)
+}

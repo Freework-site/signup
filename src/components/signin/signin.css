@@ -1,70 +1,4 @@
-.loading_container{
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
-	height: 100vh;
-	background: #fff;
-    z-index: 99;
-    overflow-x: hidden;
-    position: fixed;
-}
 
-.loader{
-	display: block;
-}
-.loader span{
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	margin-top: 10px;
-	border-radius: 50%;
-	animation: updown 0.5s  alternate infinite;
-	animation-delay: calc(0.2s * var(--i));
-}
-.one{
-	background: var(--primary-color);
-}
-.two
-{
-	background: rgb(0, 255, 106);
-}
-.three{
-	background: blueviolet;
-}
-span:not(:first-child)
-{
-	margin-left: 10px;
-}
-@keyframes updown {
-	from{
-		transform: translateY(-20px);
-	}
-	to{
-		transform: translateY(20px);
-	}
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Montserrat, sans-serif;
-}
-:root{
-    --primary-color:#7ab4ff;
-    --button-color:#6055a5;
-}
-html{
-    background:var(--primary-color)
-}
-body{
-    background: url('images/bg_desktop.png');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow:hidden;
-}
 .main{
     width: 100vw;
     height: 100vh;
@@ -76,23 +10,28 @@ body{
 }
 .headings{
     width: 50vw;
+    height: 50%;
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+
 }
 .headings h1{
-    color: #fff;
+    color: #000;
     font-size: 50px;
     font-weight: 800;
     font-family: lato,sans-serif;
     margin-bottom: 20px;
-    text-shadow: 4px 2px 10px #707070;
+    text-shadow: 4px 2px 10px #333333;
 }
 .headings p{
-    color: #fff;
+    color: #000;
     line-height: 1.6rem;
     font-weight: 500;
     margin-left: 30px;
@@ -104,7 +43,7 @@ body{
     flex-direction: column;
 }
 .message button{
-    width: 40rem;
+    width: 30rem;
     height: 3.3rem;
     background:var(--button-color);
     border: none;
@@ -165,6 +104,7 @@ body{
     text-shadow: 3px 1px 8px #707070;
     box-shadow: 0px 5px 2px #70707080;
     cursor: pointer;
+    margin: .5rem;
 }
 .signup_box button:hover{
     background: #fff;
@@ -305,7 +245,7 @@ body{
 
 @media (max-width:570px) {
     body{
-        background: url('images/bg_mobile.png');
+        background: url('../../images/bg_mobile.png');
         background-size:cover;
         background-repeat: no-repeat;
         background-attachment: fixed;

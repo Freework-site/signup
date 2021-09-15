@@ -1,0 +1,23 @@
+.button{
+    width: 23rem;
+    height: 3.3rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    appearance: none;
+    background: #11ca0b;
+    color: #fff;
+    font-size: 17px;
+    text-shadow: 3px 1px 8px #707070;
+    box-shadow: 0px 5px 2px #70707080;
+    cursor: pointer;
+    margin: .5rem;
+    text-align: center;
+    padding: .7rem;
+}
+
+.button:hover{
+    background: #fff;
+    color:#11ca0b;
+    box-shadow: 0px 5px 2px #70707080;
+}
